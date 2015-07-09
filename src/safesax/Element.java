@@ -54,7 +54,7 @@ public class Element {
    * namespace.
    */
   public Element getChild(String localName) {
-    return getChild("", localName);
+    return getChild(uri, localName);
   }
 
   /**
@@ -80,7 +80,7 @@ public class Element {
    * listeners are called.
    */
   public Element requireChild(String localName) {
-    return requireChild("", localName);
+    return requireChild(uri, localName);
   }
 
   /**
